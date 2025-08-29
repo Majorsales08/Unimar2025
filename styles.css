@@ -15,7 +15,7 @@ header {
 }
 
 img {
-    
+
     width: 190px;
     height: 55px;
   
@@ -39,17 +39,29 @@ main {
     padding: 20px;
 }
 
-footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
-    border-top: 1px solid #000000;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
+/* posição do mapa */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.location {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #001a4d; /* Exemplo: cor de fundo escura */
+  color: white;
+  text-align: center;
+}
+
+.mapa {
+  width: 300px;
+  height: 200px;
+  border: 0;
+  margin-top: 10px;
 }
 
 

@@ -17,7 +17,13 @@ function mostrarSecao(secao) {
     vestibular: {
       titulo: 'Vestibular',
       texto: 'Saiba como ingressar na Unimar, processos seletivos e inscrições abertas.'
+    },
+    noticias:{
+      titulo: 'Notícia',
+      texto: 'oi'
+    
     }
+
   };
 
   const info = textos[secao] || { titulo: '', texto: '' };
