@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Unimar Simples</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+
+    <img src="imagens/logounimar.webp">
+
+    <nav>
+      <button onclick="mostrarSecao('presencial')">Presencial</button>
+      <button onclick="mostrarSecao('ead')">EAD</button>
+      <button onclick="mostrarSecao('areaAluno')">Área do Aluno</button>
+      <button onclick="mostrarSecao('vestibular')">Vestibular</button>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="conteudo">
+      <h2>Bem-vindo à Unimar</h2>
+      <p>Escolha uma das opções acima para saber mais.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Unimar – Marília, SP | (14) 2105‑4000 | falecom@unimar.br</p>
+  </footer>
+
+
+  <section class="localizacao">
+  <h2> Nossa Localização - UNIMAR</h2>
+  <iframe
+    class="mapa"
+    src="https://www.google.com/maps?q=-22.2367935,-49.9664573&z=15&output=embed"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
