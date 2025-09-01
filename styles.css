@@ -15,10 +15,8 @@ header {
 }
 
 img {
-
     width: 190px;
     height: 55px;
-  
 }
 
 nav button {
@@ -39,60 +37,28 @@ main {
     padding: 20px;
 }
 
-
-/* posição do mapa */
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.location {
-  margin-top: auto;
-  padding: 20px;
-  background-color: #001a4d; /* Exemplo: cor de fundo escura */
-  color: white;
-  text-align: center;
-}
-
-.mapa {
-  width: 300px;
-  height: 200px;
-  border: 0;
-  margin-top: 10px;
-}
-
-
-
-/* Seção de cursos */
-.cursos {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.cursos h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #ffffff;
-}
-
-.cards {
-    display: flex;
+/* Seções (cards) */
+.secao {
+    display: none;
+    /* 🔴 todas começam escondidas */
+    padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+}
+
+.secao.active {
+    display: flex;
+    /* 🔵 só a ativa aparece */
 }
 
 .card {
+    margin: 15px;
     background-color: #ffffff;
     width: 280px;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -115,30 +81,32 @@ body {
     margin: 15px 0;
 }
 
-
-
-/*reset simples*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #011a6e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-html,body {
-    height: 100%;
+.btn:hover {
+    background-color: #004080;
 }
 
-body {
-    line-height: 1;
-    font-family: Arial, sans-serif;
+/* localização */
+.location {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #001a4d;
+    color: white;
+    text-align: center;
 }
 
-ol,ul {
-    list-style: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.mapa {
+    width: 300px;
+    height: 200px;
+    border: 0;
+    margin-top: 10px;
 }

@@ -10,22 +10,28 @@ function mostrarSecao(secao) {
       titulo: 'EAD',
       texto: 'Confira os cursos oferecidos na modalidade EAD, com flexibilidade e qualidade.'
     },
-    areaAluno: {
-      titulo: 'Área do Aluno',
-      texto: 'Acesse informações acadêmicas, boletos, notas e muito mais em sua área exclusiva.'
-    },
     vestibular: {
       titulo: 'Vestibular',
       texto: 'Saiba como ingressar na Unimar, processos seletivos e inscrições abertas.'
     },
-    noticias:{
+    noticias: {
       titulo: 'Notícia',
       texto: 'oi'
-    
+
     }
 
   };
 
   const info = textos[secao] || { titulo: '', texto: '' };
   conteudo.innerHTML = `<h2>${info.titulo}</h2><p>${info.texto}</p>`;
+}
+
+
+
+function mostrarSecao(secao) {
+  // esconde todas
+  document.querySelectorAll('.secao').forEach(s => s.classList.remove('active'));
+  // mostra só a clicada
+  const ativa = document.getElementById(secao);
+  if (ativa) ativa.classList.add('active');
 }
