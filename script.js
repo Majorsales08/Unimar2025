@@ -35,14 +35,3 @@ function mostrarSecao(secao) {
   const ativa = document.getElementById(secao);
   if (ativa) ativa.classList.add('active');
 }
-
-
-
-//function lerTexto() {
-//let texto = document.getElementById("conteudo").innerText;
-//let fala = new SpeechSynthesisUtterance(texto);
-//fala.lang = "pt-BR"; // idioma português
-//window.speechSynthesis.speak(fala);
-
-
-
