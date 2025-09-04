@@ -216,3 +216,37 @@ footer {
 .overlay a:hover {
     background-color: #003366;
 }
+
+.vestibular {
+    display: none;
+    padding: 9px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.vestibular.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vestibular div {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vestibular-img {
+    width: 76%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 9px;
+    display: block;
+    justify-items: center;
+    left: 30px;
+}
