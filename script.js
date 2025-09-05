@@ -35,3 +35,27 @@ function mostrarSecao(secao) {
   const ativa = document.getElementById(secao);
   if (ativa) ativa.classList.add('active');
 }
+
+const vestibularImages = [
+  "imagens/desktop-1-1.jpg",
+  "imagens/desktop-med-1.jpg"
+];
+let vestibularIndex = 0;
+
+const vestibularImg = document.getElementById("vestibularImg");
+const prevVest = document.getElementById("prevVest");
+const nextVest = document.getElementById("nextVest");
+
+function showVestibularImage(index) {
+  vestibularImg.src = vestibularImages[index];
+}
+
+prevVest.addEventListener("click", () => {
+  vestibularIndex = (vestibularIndex - 1 + vestibularImages.length) % vestibularImages.length;
+  showVestibularImage(vestibularIndex);
+});
+
+nextVest.addEventListener("click", () => {
+  vestibularIndex = (vestibularIndex + 1) % vestibularImages.length;
+  showVestibularImage(vestibularIndex);
+});

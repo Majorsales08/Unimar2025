@@ -14,8 +14,7 @@ header {
     justify-content: space-between;
 }
 
-
-    
+ 
 
 img {
     width: 175px;
@@ -28,10 +27,12 @@ nav button {
     margin-left: 10px;
     padding: 8px 12px;
     border-radius: 5px;
-    background-color: #ffff;
-    color: #004080;
+    background-color: #011a6e;
+    color: #ffff;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 17px;
+    border: #011a6e;
+    font-weight: bold;
     
 }
 
@@ -142,7 +143,7 @@ footer {
 .linha-custom {
   height: 2px;
   background: linear-gradient(to right, #ffffff, #0044cc, #ffffff);
-  margin: 20px auto;
+  margin: 14px auto;
   width: 100%;
   border-radius: 2px;
 
@@ -217,6 +218,7 @@ footer {
     background-color: #003366;
 }
 
+
 .vestibular {
     display: none;
     padding: 9px;
@@ -242,11 +244,38 @@ footer {
 }
 
 .vestibular-img {
-    width: 76%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     border-radius: 9px;
-    display: block;
-    justify-items: center;
-    left: 30px;
+    
+    
+   
+}
+
+.vestibular-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.vestibular-arrow {
+    background: #011a6e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.vestibular-arrow:hover {
+    background: #0044cc;
 }
