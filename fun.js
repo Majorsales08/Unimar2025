@@ -1,3 +1,3 @@
 function pagina() {
-    window.location.href = "../sengundo/index.html";
+    window.location.href = "../sengundo/site.html";
 }
