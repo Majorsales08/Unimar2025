@@ -1,3 +1,39 @@
-#capa{
-    background-color:linear-gradient(  #011a6e, #0044cc); 
+body{
+    background-color: #011a6e;
+}
+
+.capa {
+    text-align: center;
+    align-content: center;
+    
+}
+
+.capa img{
+    width: 250px;
+    height: 250px;
+    margin: 100px;
+    
+    
+}
+
+.capa button {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #0264c5, 0 0 20px #0264c5;
+   
+    
+}
+
+.capa h5{
+    color: white;
+    font-size: 18px;
+    margin-top: -60px;
+    text-align: center;
+    font-weight: normal;
+    
 }

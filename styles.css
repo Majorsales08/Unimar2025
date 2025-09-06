@@ -14,14 +14,11 @@ header {
     justify-content: space-between;
 }
 
- 
 
 img {
     width: 175px;
     height: 60px;
 }
-
-
 
 nav button {
     margin-left: 10px;
@@ -119,7 +116,7 @@ main {
 .location {
     margin-top: auto;
     padding: 20px;
-    background: linear-gradient(  #011a6e, #0044cc);
+    background: linear-gradient(#011a6e, #0044cc);
     color: white;
     text-align: center;
 }

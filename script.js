@@ -59,3 +59,4 @@ nextVest.addEventListener("click", () => {
   vestibularIndex = (vestibularIndex + 1) % vestibularImages.length;
   showVestibularImage(vestibularIndex);
 });
+
