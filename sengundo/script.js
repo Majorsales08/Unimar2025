@@ -37,8 +37,8 @@ function mostrarSecao(secao) {
 }
 
 const vestibularImages = [
-  "imagens/desktop-1-1.jpg",
-  "imagens/desktop-med-1.jpg"
+  "../imagens/desktop-1-1.jpg",
+  "../imagens/desktop-med-1.jpg"
 ];
 let vestibularIndex = 0;
 
